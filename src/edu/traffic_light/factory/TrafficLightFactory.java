@@ -39,7 +39,7 @@ public class TrafficLightFactory {
         order.put(2, signals.indexOf(greenSignal));
         order.put(3, signals.indexOf(yellowSignal));
 
-        // Определить длительности сигналов светофора - Map< Длительность сигнала, Индекс сигнала в списке сигналов > 
+        // Определить длительности сигналов светофора - Map< Индекс сигнала в списке сигналов, Длительность сигнала > 
         Map<Integer, Integer> durations = new HashMap<>();
         durations.put(signals.indexOf(redSignal), getDuration(redSignal.getColor().getValue()));
         durations.put(signals.indexOf(yellowSignal), getDuration(yellowSignal.getColor().getValue()));
